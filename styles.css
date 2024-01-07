@@ -36,10 +36,11 @@ header{
 }
 .image-and-work{
     width: 100%;
-    padding: 150px;
+    padding: 200px;
     background-image: url(./images/person.png);
+    background-size: 300px;
     background-repeat: no-repeat;
-    background-position: left center;
+    background-position: 15% center;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -51,6 +52,100 @@ header{
 }
 .info ul li{
     list-style: none;
-    margin-bottom: 10px;
-    vertical-align: middle;
+}
+.svg-and-para{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.my-plan{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    width: 80%;
+    margin: auto;
+    padding: 50px 20px;
+}
+.my-plan-head{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    text-align: center;
+    font-weight: 700;
+    font-size: 40px;
+}
+.plan{
+    text-align: center;
+    padding: 10px;
+}
+.plan .text{
+    color: #737272;
+    font-weight: 600;
+    margin-top: 0;
+}
+.plan-img{
+    display: block;
+    text-align: center;
+}
+.always-positive{
+    width: 80%;
+    height: 200px;
+    margin: auto;
+    background-image: linear-gradient(90deg, #F15B22 , transparent), url('./images/watch.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px 20px;
+}
+.positive-text{
+    padding: 20px;
+    width: 400px;
+    margin: auto 0;
+}
+.positive-text h1{
+    color: #fff;
+}
+.positive-text button{
+    padding: 15px 20px;
+    color: #F15B22;
+    background-color: #fff;
+    border: 0;
+    border-radius: 5px;
+    font-weight: 400;
+}
+/* footer */
+footer{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 700px auto;
+    align-items: center;
+    justify-content: center;
+    background-color: #151414;
+    color: #fff;
+}
+.footer-info{
+    padding: 15px;
+}
+.social-icon{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: start;
+    gap: 20px;
+}
+.footer-input{
+    height: 280px;
+    padding: 10px;
+}
+.footer-input button{
+    padding: 15px 30px;
+    color: #F15B22;
+    background-color: #fff;
+    margin-top: 15px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 500;
+}
+input[type='email']{
+    display: block;
+    height: 2em;
+    font-size: 20px;
+    padding-left: 10px;
 }
