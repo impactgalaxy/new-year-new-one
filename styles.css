@@ -6,21 +6,20 @@ body{
     margin: 0;
     font-family: 'Work Sans', sans-serif;
 }
-*{
-    border: .5px solid;
-}
 header{
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: flex-end;
     background-image: url('./images/banner/banner1.png');
-    background-position: left center;
+    background-position: left top;
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
 .hero-info{
-    width: 40%;
+    width: 100%;
     height: 100%;
-    padding: 150px 140px 120px 0px;
+    padding: 150px 100px 150px 650px;
     text-align: right;
 }
 .btn{
@@ -36,7 +35,7 @@ header{
 }
 .image-and-work{
     width: 100%;
-    padding: 200px;
+    padding: 50px;
     background-image: url(./images/person.png);
     background-size: 300px;
     background-repeat: no-repeat;
@@ -47,8 +46,13 @@ header{
     justify-content: flex-end;
 }
 .info{
-    width: 40%;
+    width: 80%;
     float: right;
+    padding-left: 180px;
+
+}
+.info ul{
+    margin: 0;
 }
 .info ul li{
     list-style: none;
@@ -88,12 +92,13 @@ header{
 .always-positive{
     width: 80%;
     height: 200px;
-    margin: auto;
+    margin: 30px auto;
     background-image: linear-gradient(90deg, #F15B22 , transparent), url('./images/watch.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     padding: 10px 20px;
+    border-radius: 10px;
 }
 .positive-text{
     padding: 20px;
@@ -113,16 +118,16 @@ header{
 }
 /* footer */
 footer{
-    height: 100vh;
+    
     display: grid;
-    grid-template-columns: 700px auto;
+    grid-template-columns: auto auto;
     align-items: center;
     justify-content: center;
     background-color: #151414;
     color: #fff;
 }
 .footer-info{
-    padding: 15px;
+    padding: 150px;
 }
 .social-icon{
     display: grid;
@@ -132,7 +137,7 @@ footer{
 }
 .footer-input{
     height: 280px;
-    padding: 10px;
+    padding: 50px;
 }
 .footer-input button{
     padding: 15px 30px;
@@ -148,4 +153,73 @@ input[type='email']{
     height: 2em;
     font-size: 20px;
     padding-left: 10px;
+}
+@media only screen and (max-width: 769px){
+    header{
+        width: 100%;
+        justify-content: center;
+        background-position: right bottom;
+        background-size: 50%;
+        background-repeat: no-repeat;
+        height: 100%;
+    }
+    .image-and-work{
+        height: 100%;
+        width: 100%;
+        margin-top: 50px;
+        padding: 100px 10px;
+        justify-content: center;
+        background-repeat: no-repeat;
+        background-size: 20%;
+        background-position: center top;
+    }
+    .info{
+        padding: 10px;
+        margin-top: 100px;
+    }
+    .svg-and-para{
+        width: 100%;
+    }
+    .hero-info{
+        width: 100%;
+        padding: 10px;
+        text-align: left;
+    }
+    .info{
+        width: 100%;
+    }
+    .my-plan{
+        width: 100%;
+        grid-template-columns: auto auto;
+        padding: 10px;
+    }
+    .my-plan-head{
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    .always-positive{
+        width: 100%;
+    }
+    footer{
+        display: grid;
+        grid-template-columns: auto;
+        height: 100%;
+    }
+    .footer-info, .footer-input{
+        padding: 50px;
+    }
+    
+  
+    
+}
+@media only screen and (max-width: 430px){
+    html{
+
+        h1, h2{
+            font-size: 22px;
+        }
+        
+    }
+  
+    
 }
